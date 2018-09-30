@@ -1,7 +1,10 @@
 .FlightUnit{
-    flex: 1;
+    flex: 1 1;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #d3d3d3;
+    background: #e2e2e2;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 1px #999;
 }
 
 .FlightUnit .PriceBlock{

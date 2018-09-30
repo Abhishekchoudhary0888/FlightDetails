@@ -12,6 +12,7 @@ const flightDetails = (props) => {
                     returnFlightFlag={props.returnFlight}
                     customerDetailsObj={props.customerDetailsObj}
                     currentDetailObj = {obj}
+                    priceSliderValue={props.priceSliderValue}
                     oneWayDetailsArray={props.oneWayflightDetails}
                     returnDetailsArray={props.returnflightDetails} />
     });

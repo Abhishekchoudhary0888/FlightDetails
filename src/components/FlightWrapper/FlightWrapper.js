@@ -10,6 +10,7 @@ class FlightWrapper extends PureComponent{
             oneWayflightDetails,
             returnflightDetails,
             customerDetailsObj,
+            priceSliderValue,
             returnFlight} = this.props;
 
         if (!oneWayflightDetails) {
@@ -21,6 +22,7 @@ class FlightWrapper extends PureComponent{
                                   oneWayflightDetails={oneWayflightDetails}
                                   returnflightDetails={returnflightDetails} />
                     <FlightDetails returnFlight={returnFlight}
+                                   priceSliderValue = {priceSliderValue}
                                    customerDetailsObj={customerDetailsObj}
                                    oneWayflightDetails={oneWayflightDetails}
                                    returnflightDetails={returnflightDetails} />

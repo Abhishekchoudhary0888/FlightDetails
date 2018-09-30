@@ -2,6 +2,7 @@
     flex: 1.5;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    background: #f2f2f2;
 }
 
 .FlightWrapperEmpty{
@@ -14,4 +15,5 @@
     padding: 40px 20px;
     box-sizing: border-box;
     text-align: center;
+    background: #f2f2f2;
 }

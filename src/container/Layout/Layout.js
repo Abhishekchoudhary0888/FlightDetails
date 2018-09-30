@@ -3,7 +3,7 @@ import Header from '../../components/Header/Header';
 import SearchForm from '../../components/SearchForm/SearchForm';
 import FlightWrapper from '../../components/FlightWrapper/FlightWrapper';
 import PriceSlider from '../../components/PriceSlider/PriceSlider'
-import 'react-rangeslider/lib/index.css'
+
 
 import classes from './Layout.css';
 
@@ -138,7 +138,8 @@ class Layout extends Component {
             },
             returnFlightFlag: true,
             oneWayflightDetails: null,
-            returnflightDetails: null
+            returnflightDetails: null,
+            priceSliderValue: 10000
         }
     }
 
@@ -253,6 +254,9 @@ class Layout extends Component {
 
     priceUpdateHandler = (value) => {
         console.log(value);
+        this.setState({
+            priceSliderValue: value
+        })
     };
 
     render() {
@@ -273,13 +277,15 @@ class Layout extends Component {
                             twoWayClicked={this.twoWayClickHandler}
                             returnFlightFlag={this.state.returnFlightFlag}/>
 
-                        <PriceSlider priceUpdate = {this.priceUpdateHandler}/>
+                        <PriceSlider sliderValue={this.state.priceSliderValue}
+                                     priceUpdate={this.priceUpdateHandler} />
                     </div>
 
 
                     <FlightWrapper
                         customerDetailsObj={this.state.customerDetailsObj}
                         returnFlight={this.state.returnFlightFlag}
+                        priceSliderValue={this.state.priceSliderValue}
                         oneWayflightDetails={this.state.oneWayflightDetails}
                         returnflightDetails={this.state.returnflightDetails}/>
                 </div>
