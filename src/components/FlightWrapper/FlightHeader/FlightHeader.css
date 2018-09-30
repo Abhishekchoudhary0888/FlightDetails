@@ -1,0 +1,26 @@
+.FlightHeader{
+    display: flex;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FlightHeader .CityDetail span {
+    display: inline-block;
+    color: #333;
+    padding: 0 5px;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.FlightHeader  .DateDetais p{
+    display: block;
+    font-size: 1.2rem;
+    color: #454545;
+    padding: 0 0 5px 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}

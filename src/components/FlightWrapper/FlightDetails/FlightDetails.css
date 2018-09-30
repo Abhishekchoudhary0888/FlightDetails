@@ -1,0 +1,6 @@
+.FlightDetails{
+    display: flex;
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+    flex-flow: column;
+}

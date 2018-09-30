@@ -1,0 +1,21 @@
+.Layout {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.Layout .Container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width: 700px){
+    .Layout .Container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

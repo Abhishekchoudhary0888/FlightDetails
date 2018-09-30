@@ -1,0 +1,37 @@
+var json = [
+{
+"pune": {
+"mumbai": {
+"12": {
+"details": {
+"origin": "pune",
+"destination": "mumbai",
+"price": 9500,
+"data": 12,
+"originCode": "PNQ",
+"destinationCode": "BOM",
+"departureTime": "12 AM",
+"ArrivalTime": "2 PM",
+"flightNumber": "AI 202",
+"via": null
+},
+"details1": {
+"origin": "pune",
+"destination": "mumbai",
+"price": 5500,
+"data": 12,
+"originCode": "PNQ",
+"destinationCode": "BOM",
+"departureTime": "12 AM",
+"ArrivalTime": "2 PM",
+"flightNumber": "AI 202",
+"via": null
+}
+}
+}
+}
+}
+]
+
+export default json;
+

@@ -1,0 +1,85 @@
+
+.SearchSection{
+    flex: 0.5;
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.SearchSection .BtnWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.SearchSection .Btn{
+    flex: 1;
+    text-align: center;
+    padding: 10px 5px;
+    color: #454545;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.SearchSection .Btn:hover,.SearchSection .Btn:active{
+    color: #111;
+    background: #ddd;
+}
+
+.SearchSection input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.SearchSection .SearchBtn{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 1.6rem;
+    background: rgba(0,0,0,0.9);
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: none;
+}
+
+.SearchSection .SearchBtn:hover{
+    background: rgba(0,0,0,0.7);
+}
+
+.SearchSection .CalenderWrap{
+    position: relative;
+}
+
+.SearchSection .calenderIcon{
+    position: absolute;
+    top: 14px;
+    right: 6px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.SearchSection  .CalenderBox{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 10;
+    background-color: #fff;
+}
+
+@media (min-width: 700px){
+    .SearchSection{
+        max-width: 400px;
+    }
+}
